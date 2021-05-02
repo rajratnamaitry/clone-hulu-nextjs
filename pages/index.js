@@ -21,7 +21,7 @@ export default function Home(props) {
 export async function getServerSideProps(context){
   const genre = context.query.genre;
   //const url = `https://api.themoviesdb.org/3${requests[genre]?.url || requests.fetchTrending.url}`;
-  const murl =`https://mocki.io/v1/37acfc42-6dd2-4ab8-9a60-9c86161c7a21`;
+  const murl =`http://localhost:3000/api/hello`;
   const request = await fetch(murl)
   .then(res=>{ console.log(res); return res.json()}).catch(e=> console.log(e));
   return {
