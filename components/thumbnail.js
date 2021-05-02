@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 const Thumbnail = forwardRef(({ result }, ref) => {
     const baseUrl = 'https://image.tmdb.org/t/p/original/'+result.backdrop_path;
     return (
-        <div ref={ref} className="group cursor-pointer" >
+        <div ref={ref} className="group cursor-pointer m-2" >
             <Image 
                 layout="responsive" 
                 src={baseUrl}

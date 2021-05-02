@@ -4,6 +4,7 @@
 
 @layer base{
     body {
-        @apply bg-green-500 text-gray-300;
+        @apply text-gray-300;
+        background-color: #06242A;
     }
 }
